@@ -34,7 +34,7 @@ class App < Sinatra::Base
     elsif params[:operation] == "subtract"
       @total = @num1 - @num2
     elsif params[:operation] == "divide"
-      @total = @num1 % @num2
+      @total = @num1 / @num2
     elsif params[:operation] == "multiply"
       @total = @num1 * @num2
     else
