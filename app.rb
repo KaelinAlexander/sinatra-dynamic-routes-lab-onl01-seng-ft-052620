@@ -37,7 +37,7 @@ class App < Sinatra::Base
       @total = params[:number1].to_i % params[:number2].to_i
       "#{@total}"
     elsif params[:operation] = "multiply"
-      @total = params[:number1].to_i * params[:number2]
+      @total = params[:number1].to_i * params[:number2].to_i
       "#{@total}"
     else
       "Please enter a valid operation."
