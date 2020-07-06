@@ -14,11 +14,11 @@ class App < Sinatra::Base
     "#{@squared}"
   end
 
-  get "/say/:number/:phrase" do
-    @phrase = params[:phrase]
-    @times = params[:number].to_i
-    @message = return @phrase * @times
-    "#{@message}"
-  end
-
+  # get "/say/:number/:phrase" do
+  #   @phrase = params[:phrase]
+  #   @times = params[:number].to_i
+  #   @message = return @phrase * @times
+  #   "#{@message}"
+  # end
+  # 
 end
