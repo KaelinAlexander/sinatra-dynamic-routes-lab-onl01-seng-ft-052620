@@ -42,7 +42,7 @@ class App < Sinatra::Base
     else
       "Please enter a valid operation."
     end
-  end 
+  end
 
 end
 
