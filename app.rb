@@ -41,6 +41,7 @@ class App < Sinatra::Base
       "#{@total}"
     else
       "Please enter a valid operation."
+    end
 
 
 end
