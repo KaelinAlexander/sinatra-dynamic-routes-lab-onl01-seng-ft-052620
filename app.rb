@@ -33,7 +33,9 @@ class App < Sinatra::Base
       @total = @num1 + @num2
       "#{@total}"
     elsif params[:operation] = "subtract"
-      @total = params[:number1].to_i - params[:number2].to_i
+      @num1 = params[:number1].to_i
+      @num2 = params[:number2].to_i
+      @total = @num1 - @num2
       "#{@total}"
     elsif params[:operation] = "divide"
       @total = params[:number1].to_i % params[:number2].to_i
