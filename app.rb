@@ -27,6 +27,12 @@ class App < Sinatra::Base
   end
 
   get "/:operation/:number1/:number2" do
-
+    if params[:operation] = "add"
+      @total = params[:number1] + params[:number2]
+      "#{@total}"
+    elsif params[:operation] = "add"
+      @total = params[:number1] + params[:number2]
+      "#{@total}"
+    
 
 end
