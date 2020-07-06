@@ -37,6 +37,8 @@ class App < Sinatra::Base
       @total = params[:number1].to_i % params[:number2].to_i
       "#{@total}"
     elsif params[:operation] = "multiply"
+      @num1 = params[:number1]
+      @num2 = params[:number2]
       @total = params[:number1].to_i * params[:number2].to_i
       "#{@total}"
     else
