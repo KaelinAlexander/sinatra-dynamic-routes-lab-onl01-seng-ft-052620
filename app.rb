@@ -33,6 +33,6 @@ class App < Sinatra::Base
     elsif params[:operation] = "add"
       @total = params[:number1] + params[:number2]
       "#{@total}"
-    
+
 
 end
