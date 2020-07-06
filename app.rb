@@ -29,13 +29,13 @@ class App < Sinatra::Base
   get "/:operation/:number1/:number2" do
     @num1 = params[:number1].to_i
     @num2 = params[:number2].to_i
-    if params[:operation] = "add"
+    if params[:operation] == "add"
       @total = @num1 + @num2
-    elsif params[:operation] = "subtract"
+    elsif params[:operation] == "subtract"
       @total = @num1 - @num2
-    elsif params[:operation] = "divide"
+    elsif params[:operation] == "divide"
       @total = @num1 % @num2
-    elsif params[:operation] = "multiply"
+    elsif params[:operation] == "multiply"
       @total = @num1 * @num2
     else
       "Please enter a valid operation."
