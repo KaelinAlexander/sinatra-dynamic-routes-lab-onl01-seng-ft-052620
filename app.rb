@@ -8,10 +8,12 @@ class App < Sinatra::Base
     "#{@reversed}"
   end
 
-  get "square/:number" do
+  get "/square/:number" do
     @number = params[:number].to_i
     @squared = @number * @number
     "#{@squared}"
   end
+
+  get "/say/:number/:phrase"
 
 end
