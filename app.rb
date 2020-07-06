@@ -20,5 +20,5 @@ class App < Sinatra::Base
     @message = @phrase * @times
     "#{@message}"
   end
-  
+
 end
