@@ -39,6 +39,8 @@ class App < Sinatra::Base
     elsif params[:operation] = "multiply"
       @total = params[:number1] * params[:number2]
       "#{@total}"
+    else
+      "Please enter a valid operation."
 
 
 end
