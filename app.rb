@@ -40,7 +40,7 @@ class App < Sinatra::Base
     else
       "Please enter a valid operation."
     end
-    "#{@total.to_s}"
+    "#{@total}"
   end
 
 end
