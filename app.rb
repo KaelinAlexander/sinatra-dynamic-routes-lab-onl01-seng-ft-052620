@@ -14,9 +14,9 @@ class App < Sinatra::Base
     "#{@squared}"
   end
 
-  get "/say/:number/:phrase"
+  get "/say/:number/:phrase" do
     @message = return params[:phrase].to_s * params[:number].to_i
     "#{@message}"
   end
-
+  
 end
