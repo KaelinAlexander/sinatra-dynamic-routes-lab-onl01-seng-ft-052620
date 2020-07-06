@@ -5,7 +5,7 @@ class App < Sinatra::Base
   get "/:reverse_name" do
     @name = params[:name].to_s
     @reversed = @name.reverse
-    "Hello, #{@bye_name}."
+    "Hello, #{@reversed}."
   end
 
   get "/multiply/:num1/:num2" do
